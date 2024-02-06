@@ -1,0 +1,15 @@
+{
+	"manifest_version": 3,
+	"name": "Long Live Kanbanize",
+	"version": "0.1",
+	"description": "Chrome extension that replaces occurrences of 'businessmap' with 'kanbanize'",
+	"content_scripts": 
+	[
+		{
+			"matches": ["*://*.kanbanize.com/*", "*://kanbanize.com/*", "*://*.businessmap.io/*", "*://businessmap.io/*"],
+			"js": ["content_script.js"],
+			"run_at": "document_end"
+		}
+	]	 
+}
+
